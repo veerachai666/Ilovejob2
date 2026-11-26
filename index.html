@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I love job - แพลตฟอร์มหางานสำหรับนักศึกษาจบใหม่</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section + 8 Auto-Slider -->
+  <section class="hero">
+    <div>
+      <span class="badge">✨ พื้นที่เริ่มต้นอาชีพสำหรับเด็กจบใหม่</span>
+      <h1>ก้าวแรกสู่วัยทำงานอย่างมั่นใจกับ <span>I love job</span></h1>
+      <p style="color:#64748b;margin-bottom:1.5rem;">
+        รวบรวมตำแหน่งงานสำหรับนักศึกษาจบใหม่โดยเฉพาะ ไม่จำเป็นต้องมีประสบการณ์ พร้อมบริษัทที่เปิดโอกาสและยินดีสอนงานให้คุณเติบโต
+      </p>
+      <a href="#explore" class="btn-emerald">สำรวจตัวเลือกทั้ง 10 หมวดหมู่ ↓</a>
+    </div>
+
+    <div class="slider-wrapper">
+      <button class="slider-btn prev" onclick="moveSlide(-1)">❮</button>
+      <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
+      <div class="slides" id="heroSlides">
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" alt="ทีมงานออฟฟิศ">
+          <div class="slide-caption">1. บรรยากาศการทำงานเป็นทีมในบริษัทสมัยใหม่</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="นักศึกษาปรึกษางาน">
+          <div class="slide-caption">2. เตรียมความพร้อมตั้งแต่วัยเรียนสู่สายงานที่ใช่</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="ประชุมไอเดีย">
+          <div class="slide-caption">3. พื้นที่เปิดกว้างสำหรับไอเดียคนรุ่นใหม่</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80" alt="พี่เลี้ยงสอนงาน">
+          <div class="slide-caption">4. มีรุ่นพี่ Mentor คอยดูแลและสอนงานอย่างใกล้ชิด</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80" alt="สัมภาษณ์งาน">
+          <div class="slide-caption">5. สัมภาษณ์งานตรงสายกับ HR บริษัทชั้นนำ</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80" alt="อบรมเวิร์กช็อปนักศึกษา">
+          <div class="slide-caption">6. คลาสเวิร์กช็อปพัฒนาทักษะก่อนเริ่มงานจริง</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="วางแผนโปรเจกต์">
+          <div class="slide-caption">7. เรียนรู้การทำงานจริงผ่านโปรเจกต์ดิจิทัล</div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80" alt="ความสำเร็จในการทำงาน">
+          <div class="slide-caption">8. เติบโตในสายอาชีพอย่างมั่นคงตั้งแต่วันแรก</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 Options Carousel -->
+  <section class="options-section" id="explore">
+    <div class="options-container">
+      <div class="carousel-controls">
+        <div>
+          <h2>เครื่องมือและหมวดหมู่งาน 10 ช่อง</h2>
+          <p style="color:#64748b;font-size:0.9rem;">เลือกหมวดหมู่ที่ต้องการเพื่อเข้าสู่หน้ารายละเอียด</p>
+        </div>
+        <div style="display:flex;gap:0.5rem;">
+          <button class="btn-outline" onclick="scrollCards(-1)">← เลื่อนซ้าย</button>
+          <button class="btn-outline" onclick="scrollCards(1)">เลื่อนขวา →</button>
+        </div>
+      </div>
+
+      <div class="cards-track" id="cardsTrack">
+        <a href="option-1.html" class="option-card">
+          <div><span class="card-num">01</span><h3>งานสำหรับเด็กจบใหม่</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">ตำแหน่งงานเปิดรับนักศึกษาจบใหม่ ไม่เน้นประสบการณ์</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-2.html" class="option-card">
+          <div><span class="card-num">02</span><h3>โครงการฝึกงาน & Co-op</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">ค้นหาที่ฝึกงานสหกิจศึกษา พร้อมเบี้ยเลี้ยงและโอกาสบรรจุ</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-3.html" class="option-card">
+          <div><span class="card-num">03</span><h3>เครื่องมือสร้าง Resume</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">เทมเพลตเรซูเม่สำหรับคนไม่มีประสบการณ์ทำงาน</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-4.html" class="option-card">
+          <div><span class="card-num">04</span><h3>บริษัทใจดีพร้อมเทรนงาน</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">รายชื่อองค์กรที่มีระบบ Onboarding และพี่เลี้ยงสอนงาน</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-5.html" class="option-card">
+          <div><span class="card-num">05</span><h3>ฝากประวัติให้ HR ทักหา</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">สร้างโปรไฟล์ผลงานให้ฝ่ายบุคคลติดต่อเสนองานโดยตรง</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-6.html" class="option-card">
+          <div><span class="card-num">06</span><h3>เตรียมตัวสัมภาษณ์งาน</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">รวมคำถามยอดฮิตและเทคนิคตอบคำถามให้ได้งานแรก</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-7.html" class="option-card">
+          <div><span class="card-num">07</span><h3>ประเมินเงินเดือนแรกเริ่ม</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">เช็กฐานเงินเดือนเด็กจบใหม่ในแต่ละสายอาชีพ</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-8.html" class="option-card">
+          <div><span class="card-num">08</span><h3>คอร์สเพิ่มทักษะทำงาน</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">อัปสกิลดิจิทัลและซอฟต์สกิลที่บริษัทต้องการตัว</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-9.html" class="option-card">
+          <div><span class="card-num">09</span><h3>คำแนะนำจากรุ่นพี่</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">บทความแชร์ประสบการณ์ทำงานปีแรกจากรุ่นพี่สายต่างๆ</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+        <a href="option-10.html" class="option-card">
+          <div><span class="card-num">10</span><h3>ติดตามสถานะใบสมัคร</h3><p style="color:#64748b;font-size:0.88rem;margin-top:0.5rem;">ตรวจสอบความคืบหน้าการยื่นสมัครงานทั้งหมดของคุณ</p></div>
+          <span style="color:#059669;font-size:0.85rem;font-weight:600;margin-top:1rem;">เปิดหน้านี้ →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
